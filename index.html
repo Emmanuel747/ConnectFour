@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./style.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+   <title>Eman's MiniGame-Connect 4 </title>
+</head>
+<body>
+   <h3 class="game-title" style="text-align: center; "> Connect Four™</h3>
+   <div class="game-buttons">
+      <button class="setup" > Change Player Names</button>
+      <button class="resetButton" style="margin-right: 15px; margin-left: 15px;">Play Again</button>
+      <button class="cpuMode">Single Player Mode</button>
+   </div>
+   <span class="playerName1" id="player" style="text-align: center; margin-left: 30px;"></span>
+   <h3 class="player" id="player" style="text-align: center;">New Game</h3>
+   <span class="playerName2" id="playerN2" style="text-align: center; margin-left: 30px;"></span>
+
+   <h3 class="announcement win" style="text-align: center;"></h3>
+   <div id="app">
+      <div class="board">
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+         <div class="space"></div>
+      </div>
+   </div>
+   <div class="modal ">
+      <div class="content">
+        <h3>Eman's Connect 4 New Game</h3>
+        <form class="setup-form" action="" method="">
+          <label for="playerName-1">Player-1 Name</label>
+          <input type="text" id="playerName-1" required>
+          <label for="playerName-2">Player-2 Name</label>
+          <input type="text" id="playerName-2" required>
+          <h5>This is a required field</h5>
+          <div class="actions">
+            <button type="button" class="action start-game when-valid">
+              <i class="material-icons">check_circle</i>
+              <span class="action-text">Start Game</span>
+            </button>
+            <button disabled class="action start-game when-invalid">
+              <i class="material-icons">check_circle</i>
+              <span class="action-text">Start Game</span>
+            </button>
+            <button type="button" class="action close-game-setup">
+              <i class="material-icons">cancel</i>
+              <span class="action-text">Cancel</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script src="./app.js"></script>
+</body>
+</html>
